@@ -11,6 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../includes/css/normalize.css">
         <link rel="stylesheet" href="../includes/css/main.css">
@@ -41,8 +43,8 @@
                 <h1> Classic Macarons</h1>
                 <ul>
                     <li>
-                        <img src="../includes/img/flavor_redvelvet.png" alt="red velvet"/>
-                        <p>Red Velvet</p>
+                        <img src="../includes/img/flavor_chocpb.png" alt="chocolate peanut butter"/>
+                        <p>Chocolate Peanut Butter</p>
                     </li>
                     <li>
                         <img src="../includes/img/flavor_smores.png" alt="S'Mores"/>
@@ -106,7 +108,7 @@
 
 
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="includes/js/plugins.js"></script>
         <script src="includes/js/main.js"></script>

@@ -11,6 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../includes/css/normalize.css">
         <link rel="stylesheet" href="../includes/css/main.css">
@@ -41,7 +43,7 @@
                     </div>
                     <div class="text_about">
                         <h1> About Mac Fabulous</h1>
-                        <p><span class="span_about">C</span>ara had always been memorized by the French Macaron - the color combinations alone were enough to entrance her creative eye. With a reputation for being a more advanced recipe, she was eager to give the little bite sized delicacies a try. And so it was a snowy winter evening that Cara volunteered to be responsible for a fun and delicious dessert at her mother's upcoming "Girl's Night" dinner party. The party Macarons were a huge success and it was clear that there was a huge demand for these little confections.</p>
+                        <p><span class="span_about">C</span>ara had always been mesmerized by the French Macaron - the color combinations alone were enough to entrance her creative eye. With a reputation for being a more advanced recipe, she was eager to give the little bite sized delicacies a try. And so it was a snowy winter evening that Cara volunteered to be responsible for a fun and delicious dessert at her mother's upcoming "Girl's Night" dinner party. The party Macarons were a huge success and it was clear that there was a huge demand for these little confections.</p>
                         <p>With the encouragement of the party guests propelling her forward, Cara continued to retool and reinvent her recipe and flavor combinations until she mastered the art of the Macaron. She found inspiration everywhere as she dreamed up a myriad of flavor possibilities - many of which serve as her signature flavors today. As more and more people got their hands on the little treats it was clear that her Macarons were anything but ordinary, and so Cara ventured out into the world of baking and the rest, as they say, is history.</p>
                     </div> 
                 </div>
@@ -68,7 +70,7 @@
 
 
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="includes/js/plugins.js"></script>
         <script src="includes/js/main.js"></script>

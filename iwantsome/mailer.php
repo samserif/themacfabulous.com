@@ -44,10 +44,15 @@ $field_firstname = filter_var( $_POST['cf_firstname'], FILTER_SANITIZE_STRING);
 $field_lastname = filter_var( $_POST['cf_lastname'], FILTER_SANITIZE_STRING);
 $field_email = filter_var( $_POST['cf_email'], FILTER_SANITIZE_EMAIL);
 $field_message = filter_var( $_POST['cf_comment'], FILTER_SANITIZE_STRING);
-$field_whatiwant = filter_var( $_POST['cf_whatiwant'], FILTER_SANITIZE_STRING);
-$field_comments = filter_var( $_POST['cf_comments'], FILTER_SANITIZE_STRING);
-$field_servingpeople = filter_var( $_POST['cf_servingpeople'], FILTER_SANITIZE_STRING);
-$field_macarons = filter_var( $_POST['cf_macarons'], FILTER_SANITIZE_STRING);
+if ( array_key_exists('cf_whatiwant', $_POST) ) {
+	$field_whatiwant = filter_var( $_POST['cf_whatiwant'], FILTER_SANITIZE_STRING);
+}
+if ( array_key_exists('cf_serving_people', $_POST) ) {
+$field_servingpeople = filter_var( $_POST['cf_serving_people'], FILTER_SANITIZE_STRING);
+}
+if ( array_key_exists('cf_macarons', $_POST) ) {
+	$field_macarons = filter_var( $_POST['cf_macarons'], FILTER_SANITIZE_STRING);
+}
 $field_radio = $_POST['cf_radio'];
 $field_iwant = $_POST['cf_iwant'];
 
@@ -89,7 +94,7 @@ $body_message .= 'E-mail: '.$field_email."\n\n";
 
 $body_message .= 'How Much: '.$howmany."\n";
 $body_message .= 'Flavors: '.$flavors."\n";
-$body_message .= 'Comments: '.$field_comments;
+$body_message .= 'Comments: '.$field_message;
 
 
 /*Creates the variable $headers, which tells us who this is from and to where we will reply*/
@@ -102,14 +107,14 @@ $mail_status = mail($mail_to, $subject, $body_message, $headers);
 /*Displays a message depending on the value of $mail_status*/
 if ($mail_status) { ?>
 	<script language="javascript" type="text/javascript">
-		alert("Put a success message here.");
+		alert("Thank you for ordering from Mac Fabulous!  We'll be in contact shortly.");
 		window.location = '/';
 	</script>
 <?php
 }
 else { ?>
 	<script language="javascript" type="text/javascript">
-		alert('Put a failure message here.');
+		alert('Uh oh!  It seems like something may have gone wrong.  Did you enter all of your information correctly?  Try emailing us directly.  Sorry about that!');
 		window.location = '/';
 	</script>
 <?php

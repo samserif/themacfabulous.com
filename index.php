@@ -11,6 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="includes/css/normalize.css">
         <link rel="stylesheet" href="includes/css/main.css">
@@ -39,43 +41,44 @@
                 <div class="mac_homeheader_img">
                     <img src="includes/img/machomeicon.png" alt="vanilla and strawberry macaron"/>
                 </div>
-                <h1> Welcome to Mac Fabulous!</h1>
-                <h2>Fabulous Macarons for Private Events & Custom Gifts</h2>
-                 
-
-                 <div class="home_section1">
-                    <div class="ribbonbg">
-                        <h3> Place An Order</h3>
-                    </div>
-                   <p>Hosting a special event or just looking for a unique, custom gift? Mac Fabulous has different options to customize any event.</p>
-                    <button class="button1"> <a href="/iwantsome">Order Now</a></button>
+                <div class="mac_homeheader_text">
+                    <h1> Welcome to Mac Fabulous!</h1>
+                    <h2>Fabulous Macarons for Private Events & Custom Gifts</h2>
+                </div> 
+                <div class="home_topsections">
+                         <div class="home_section1">
+                            <div class="ribbonbg">
+                                <h3> Place An Order</h3>
+                            </div>
+                           <p>Hosting a special event or just looking for a unique, custom gift? Mac Fabulous has different options to customize any event.</p>
+                            <button class="button1"> <a href="/iwantsome">Order Now</a></button>
+                        </div>
+                        
+                        <div class="home_section2">
+                            <div class="ribbonbg">
+                                <h3> Find A Flavor</h3>
+                            </div>
+                            <p>Not your traditional Macaron flavors. Find your perfect match or try them all!</p>
+                            <button class="button1"> <a href="/macarons">View Flavors</a></button> 
+                        </div>
                 </div>
-                
-                <div class="home_section2">
-                    <div class="ribbonbg">
-                        <h3> Find A Flavor</h3>
-                    </div>
-                    <p>Not your traditional Macaron flavors. Find your perfect match or try them all!</p>
-                    <button class="button1"> <a href="/macarons">View Flavors</a></button> 
-                </div>
-
                 <div class="home_section3">
                     <div class="ribbonbg">
                       <h3> Stay Updated</h3>
                      </div>
                      
                      <div class="mac_formhome">
-                        <form action="/form1" method="post">
-                            <p>Can’t get enough of Mac Fabulous? Sign up for special offers & flavor updates.</p>
+                        <form action="http://themacfabulous.us3.list-manage2.com/subscribe/post?u=60d768fc47d62157316988a23&amp;id=8b2d65aad7" method="post" name="mc-embedded-subscribe-form" target="_blank">
+                            <p>Can’t get enough of Mac Fabulous? <br/>Sign up for special offers & flavor updates.</p>
                                 <div class="formhome_name">
                                     <label for="name"></label>
-                                    <input placeholder="Name"type="text" id="name" />
+                                    <input placeholder="First Name" type="text" value="" name="FNAME" id="name" />
                                 </div>
                                 <div class="formhome_email">
                                     <label for="mail"></label>
-                                    <input placeholder="E-mail" type="email" id="mail" />
+                                    <input placeholder="E-mail" type="email" value="" name="EMAIL" id="mail" />
                                 </div>
-                                    <button class="button1">Submit</button>
+                                    <input type="submit" value="Submit" name="subscribe" class="button1"/>
                         </form>
                     </div>
                 </div>
@@ -93,7 +96,7 @@
         </footer>
 
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="includes/js/plugins.js"></script>
         <script src="includes/js/main.js"></script>

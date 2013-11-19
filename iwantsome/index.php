@@ -11,13 +11,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../includes/css/normalize.css">
         <link rel="stylesheet" href="../includes/css/main.css">
         <link rel="stylesheet" href="../includes/css/style.css">
         <script src="../includes/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
-    <body>
+    <body class="wantsome">
         <div class="wrapper">
             <header>
                 <a class="logo" href="/">
@@ -35,55 +37,61 @@
                     </div>
                 </nav>
             </header>
-            <div class="mac_order">
-                <h1> Place an Order</h1>
-                <p> Ordering from MacFabulous is simple! Use this form to tell us more about your order - what flavor(s) and quantity you'd like to order - and we'll get back to you with a custom quote within 1 business day!</p>
-            </div>
-            <div>
-                <form action="mailer.php" method="post">
-                    <div>
-                      <label class="description" for="element_1">Name </label>
-                        <span>
-                            <input id="cf_firstname" name="cf_firstname" type="text" maxlength="255" size="14" placeholder="First"/>
-                        </span>
-                        <span>
-                            <input id="cf_lastname" name="cf_lastname" type="text" maxlength="255" size="24" placeholder="Last"/>
-                        </span> 
+                <div class="mac_iwantsome">
+                    <div class="mac_order">
+                        <h1> Place an Order</h1>
+                        <p> Ordering from MacFabulous is simple! Use this form to tell us more about your order - what flavor(s) and quantity you'd like to order - and we'll get back to you with a custom quote within 1 business day!</p>
                     </div>
-                    <div>
-                        <label class="description" for="element_2">Email <input id="cf_email" name="cf_email" class="element text medium" type="text" maxlength="255" value=""/> 
-                    </div> 
-                    <div>
-                        <div>
-                            <label class="choice" for="element_6_1">
-                                <input name="cf_radio" class="element radio" type="radio" value="1" />
-                                I am serving <input name="cf_serving_people" type="text" maxlength="6"/> people.
-                            </label>
-                        </div>
-                        <div>
-                            <label class="choice" for="element_6_2">
-                                <input name="cf_radio" class="element radio" type="radio" value="2" />
-                                I would like to order <input name="cf_macarons" type="text" maxlength="6"/> macarons.
-                            </label>
-                        </div>
-                    </div>  
-                    <label class="description" for="element_7">Pick your flavor(s):
-                        <div>
-                            <input id="element_7_1" name="cf_iwant" class="element radio" type="radio" value="1" />
-                            <label class="choice" for="element_7_1">I know what I want.</label>
-                            <textarea id="element_5" name="cf_whatiwant" class="element textarea medium"></textarea>
-                        </div>
-                        <div>
-                            <input id="element_7_2" name="cf_iwant" class="element radio" type="radio" value="2" />
-                            <label class="choice" for="element_7_2">I need flavor inspiration.</label>
-                        </div>
-                    </label> 
+                    <div class="mac_order_form">
+                        <form action="mailer.php" method="post">
+                            <div>
+                              <label class="description" for="element_1"> </label>
+                                <span>
+                                    <input required id="cf_firstname" name="cf_firstname" type="text" maxlength="255" size="14" placeholder="First"/>
+                                </span>
+                                <span>
+                                    <input required id="cf_lastname" name="cf_lastname" type="text" maxlength="255" size="24" placeholder="Last"/>
+                                </span> 
+                            </div>
+                            <div>
+                                <label class="description" for="element_2">
+                                    <input required type="email" pattern="[^ @]*@[^ @]*" id="cf_email" name="cf_email" class="element text medium" placeholder="Email" maxlength="255" size="24"value=""/> 
+                                </label>
+                            </div> 
+                            <div>
+                                <div>
+                                    <label class="choice" for="element_6_1">
+                                        <input required name="cf_radio" id="cf_radio1_1" class="element radio" type="radio" value="1" />
+                                        I am serving <input disabled name="cf_serving_people" type="text" maxlength="5" size="4"/> people.
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="choice" for="element_6_2">
+                                        <input required name="cf_radio" id="cf_radio1_2" class="element radio" type="radio" value="2" />
+                                        I would like to order <input disabled name="cf_macarons" value="" type="text" maxlength="5" size="4"/> macarons.
+                                    </label>
+                                </div>
+                            </div>  
+                            <label class="description" for="element_7">Pick your flavor(s):
+                                <div>
+                                    <input required id="cf_radio2_1" name="cf_iwant" class="element radio" type="radio" value="1" />
+                                    <label class="choice" for="element_7_1">I know what I want.</label>
+                                    <textarea disabled id="element_5" name="cf_whatiwant" class="element textarea medium"></textarea>
+                                </div>
+                                <div>
+                                    <input required id="cf_radio2_2" name="cf_iwant" class="element radio" type="radio" value="2" />
+                                    <label class="choice" for="element_7_2">I need flavor inspiration.</label>
+                                </div>
+                            </label> 
 
-                    <label class="description" for="element_5">Additional Comments
-                        <textarea id="element_5" name="cf_comments" class="element textarea medium"></textarea> 
-                    </label>
-                    <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
-                </form> 
+                            <label class="description" for="element_5">Additional Comments
+                                <textarea id="element_5" name="cf_comment" value=" " class="element textarea medium"></textarea> 
+                            </label>
+                            <div class="align">
+                                <input id="saveForm" class="button1" type="submit" name="submit" value="Submit" />
+                            </div>
+                        </form> 
+                    </div>
             </div>
         <div class="push"></div>
         </div>
@@ -97,10 +105,10 @@
             <p> Copyright Mac Fabulous 2013</p>
         </footer>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="includes/js/plugins.js"></script>
-        <script src="includes/js/main.js"></script>
+        <script src="/includes/js/plugins.js"></script>
+        <script src="/includes/js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
